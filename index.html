@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    TODO: Refactor IDs of non-education elements for accordion use
+    TODO: Add small contacts section to bottom of page?
+    TODO: Fix lag on dropdown closing
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>Alex Rowe</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="#" class="nav-link">
+            <img src="imgs/mainIcon.png" id="mainIcon">
+        </a>
+        <a href="#aboutHook" class="nav-link">About</a>
+        <a href="#educationHook" class="nav-link">Education</a>
+        <a href="#experienceHook" class="nav-link">Experience</a>
+        <a href="#projectsContainer" class="nav-link">Projects</a>
+        <a href="#" class="nav-link" id="contactNav">Contact</a>
+    </div>
+
+    <div id="socialbar">
+        <a href="https://github.com/alexrowe12" target="_blank" rel="noopener noreferrer">
+            <img class="socialbarImg" src="imgs/githubIcon.png">
+        </a>
+        <a href="https://www.linkedin.com/in/alexrowe12" target="_blank" rel="noopener noreferrer">
+            <img class="socialbarImg" src="imgs/linkedinIcon.png">
+        </a>
+        <a href="mailto:arowe7@wisc.edu">
+            <img class="socialbarImg" src="imgs/emailIcon.png">
+        </a>
+    </div>
+
+    <div id="aboutHook"></div>
+
+    <div id="aboutContainer">
+        <div>
+            <img id="headshot" src="imgs/headshot.png" alt="Headshot">
+        </div>
+        <div class="aboutSection">
+            <h1 id="aboutTitle">About</h1>
+            <p class="aboutText">
+                Hey! I'm Alex Rowe, a student at the University of Wisconsin-Madison studying 
+                computer science and business. I'm passionate about web engineering and quantitative
+                finance, but I'm also constantly diving into new disciplines of software engineering.
+                Python is my bread and butter, and I'm confident in Java, Javascript, and learning
+                C++ and React. I'm a New York City native and in my spare time, I play guitar, 
+                weightlift, and hang out with my dog, Jackie. Thank you for stopping by, and please 
+                reach out if you have any questions, comments, or want to know my favorite burrito
+                spot in NYC.
+            </p>
+        </div>
+    </div>
+
+    <div id="educationHook"></div>
+
+    <div id="educationContainer">
+        <h1 class="sectionTitle" style="margin-top: 0px">Education</h1>
+        <div id="ew1">
+            <div class="educationContent" id="ec1">
+                <div id="leftAlignedContent">
+                    <img src="imgs/uwLogo.png" class="educationLogo" alt="University of Wisconsin-Madison Logo">
+                    <div id="educationText">
+                        <p class="universityName" style="padding-top: 7px; padding-bottom: 3px;">
+                            University of Wisconsin-Madison</p>
+                        <p class="degreeInfo">B.S. in computer science, minor in business</p>
+                    </div>
+                </div>
+                <div id="rightAlignedText">
+                    <p class="additionalInfo" id="timestamp">Sep 2023 - Dec 2026</p>
+                    <p class="additionalInfo" style="font-weight: 300; margin-top: 2px; font-size: 18px;">
+                        Madison, WI</p>
+                </div>
+                <button class="dropdownButton" id="ddb1">
+                    <img src="imgs/downArrowIcon.png" class="dropdownArrow" id="dda1">
+                </button>
+            </div>
+            <div id="dropdownInfo1">
+                <p class="dropdownText">- Studied computer science and a certificate in business at the University of Wisconsin-Madison</p>
+                <p class="dropdownText">- Member of the Wisconsin AI Safety Initiative and Badger Solar Racing's firmware team</p>
+            </div>
+        </div>
+
+        <div id="ew2">
+            <div class="educationContent" id="ec2">
+                <div id="leftAlignedContent">
+                    <img src="imgs/daltonLogo.png" class="educationLogo" alt="The Dalton School logo">
+                    <div id="educationText">
+                        <p class="universityName" style="padding-top: 7px; padding-bottom: 3px;">
+                            The Dalton School</p>
+                        <div id="experienceHook"></div>
+                        <p class="degreeInfo">High School Diploma</p>
+                    </div>
+                </div>
+                <div id="rightAlignedText">
+                    <p class="additionalInfo" id="timestamp">Sep 2019 - May 2023</p>
+                    <p class="additionalInfo" style="font-weight: 300; margin-top: 2px; font-size: 18px;">
+                        New York, NY</p>
+                </div>
+                <button class="dropdownButton" id="ddb2">
+                    <img src="imgs/downArrowIcon.png" class="dropdownArrow" id="dda2">
+                </button>
+            </div>
+            <div id="dropdownInfo2">
+                <p class="dropdownText">- Attended the Dalton School, recipient of the Warren Hines Coaches Award</p>
+                <p class="dropdownText">- Founder of the Finance Club, grew to over 50 active members and won the NY stock market game</p>
+                <p class="dropdownText">- 12 season varsity athlete, 3 sport caption, playing soccer, wrestling, and baseball</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="experienceContainer" style="padding-bottom: 0px;">
+        <h1 class="sectionTitle" style="margin-top: 20px;">Experience</h1>
+
+        <div id="ew3">
+            <div class="educationContent" id="ec3">
+                <div id="leftAlignedContent">
+                    <img src="imgs/impelLogo.png" class="educationLogo" alt="Impel logo">
+                    <div id="educationText">
+                        <p class="universityName" style="padding-top: 7px; padding-bottom: 3px;">
+                            <a href="https://impel.ai/" class="companyLink" target="_blank">Impel</a>
+                        </p>
+                        <p class="degreeInfo">Full-Stack Software Engineering Intern</p>
+                    </div>
+                </div>
+                <div id="rightAlignedText">
+                    <p class="additionalInfo" id="timestamp">May 2024 - Aug 2024</p>
+                    <p class="additionalInfo" style="font-weight: 300; margin-top: 2px; font-size: 18px;">
+                        New York, NY</p>
+                </div>
+                <button class="dropdownButton" id="ddb3">
+                    <img src="imgs/downArrowIcon.png" class="dropdownArrow" id="dda3">
+                </button>
+            </div>
+            <div id="dropdownInfo3">
+                <p class="dropdownText">- Utilized AWS, React, Javascript, Python, and other technologies on a fast-paced startup's merchandising engineering team</p>
+                <p class="dropdownText">- Completed 9 projects as a full-stack web engineer, ranging from UI changes to vulnerability mitigation</p>
+                <p class="dropdownText">- Lead a full DNS propagation of a client-facing web app using various AWS applications</p>
+            </div>
+        </div>
+
+        <div class="sectionSpacer"></div>
+
+        <div id="ew4">
+            <div class="educationContent" id="ec4">
+                <div id="leftAlignedContent">
+                    <img src="imgs/cardinalLogo.png" class="educationLogo" alt="Cardinal Trading Group Logo">
+                    <div id="educationText">
+                        <p class="universityName" style="padding-top: 7px; padding-bottom: 3px;">
+                            <a href="https://cardinaltradinguw.com/" class="companyLink" target="_blank">Cardinal Trading Group</a>
+                        </p>
+                        <p class="degreeInfo">Senior Software Engineer</p>
+                    </div>
+                </div>
+                <div id="rightAlignedText">
+                    <p class="additionalInfo" id="timestamp">Jan 2024 - Present</p>
+                    <p class="additionalInfo" style="font-weight: 300; margin-top: 2px; font-size: 18px;">Madison, WI</p>
+                </div>
+                <button class="dropdownButton" id="ddb4">
+                    <img src="imgs/downArrowIcon.png" class="dropdownArrow" id="dda4">
+                </button>
+            </div>
+            <div id="dropdownInfo4">
+                <p class="dropdownText">- Designed user permission and authorization flows, leveraged DBaaS REST APIs, and deployed application with documentation to multi-stage environments using Python Flask, SQL, Docker, Kubernetes, and YAML.</p>
+                <p class="dropdownText">- Collaborated with a group of 4 members to pitch a buy-side strategy, utilizing Bloomberg Terminal, Pandas, Scikit- Learn, and Matplotlib to generate materials.</p>
+                <p class="dropdownText">- Engineered an equity trading model that utilizes congressional trade data and sentiment analysis to automate the execution of trading opportunities.</p>
+            </div>
+        </div>
+
+        <div class="sectionSpacer"></div>
+
+        <div id="ew5">
+            <div class="educationContent" id="ec5">
+                <div id="leftAlignedContent">
+                    <img src="imgs/launchLogo.png" class="educationLogo" alt="Launch Math Logo">
+                    <div id="educationText">
+                        <p class="universityName" style="padding-top: 7px; padding-bottom: 3px;">
+                            <a href="https://launchmath.com/" class="companyLink" target="_blank">Launch Math + Science Centers</a>
+                        </p>
+                        <p class="degreeInfo">Lead Instructor</p>
+                    </div>
+                </div>
+                <div id="rightAlignedText">
+                    <p class="additionalInfo" id="timestamp">May 2022 - Aug 2023</p>
+                    <p class="additionalInfo" style="font-weight: 300; margin-top: 2px; font-size: 18px;">New York, NY</p>
+                </div>
+                <button class="dropdownButton" id="ddb5">
+                    <img src="imgs/downArrowIcon.png" class="dropdownArrow" id="dda5">
+                </button>
+            </div>
+            <div id="dropdownInfo5">
+                <p class="dropdownText">- Taught full-time as the lead counselor of 10-15 children with a focus on fostering a deep understanding of STEM topics through project-based learning, leading to a promotion from outdoor assistant to full-time lead instructor.</p>
+                <p class="dropdownText">- Collaborated with supervisors to design and implement curriculum, creating hands-on activities for 2nd, 3rd, and 4th graders, primarily in computer science and physics.</p>
+            </div>
+        </div>
+
+        <div class="sectionSpacer"></div>
+
+        <div id="ew6" style="width: 970px;">
+            <div class="educationContent" id="ec6">
+                <div id="leftAlignedContent">
+                    <img src="imgs/otherLogo.png" class="educationLogo" alt="Other Experiences Logo">
+                    <div id="educationText">
+                        <p class="universityName" style="padding-top: 22px; padding-bottom: 3px;">Other Experience</p>
+                        <p class="degreeInfo"></p>
+                    </div>
+                </div>
+                <div id="rightAlignedText">
+                    <p class="additionalInfo" id="timestamp"></p>
+                    <p class="additionalInfo" style="font-weight: 300; margin-top: 2px; font-size: 18px;"></p>
+                </div>
+                <button class="dropdownButton" id="ddb6">
+                    <img src="imgs/downArrowIcon.png" class="dropdownArrow" id="dda6">
+                </button>
+            </div>
+            <div id="dropdownInfo6">
+                <p class="dropdownText">- Amorino Gelato: served gelato, coffee, and baked goods to customers, as well as worked the register and stocked the freezers.</p>
+                <p class="dropdownText">- Freelance Music Producer: produced, mixed, and mastered tracks across various genres, including hip-hop, rock, and electronic. I built my own brand, marketed, and sold my product to labels and independent artists alike.</p>
+                <p class="dropdownText">- Counselor at Dalton Summer Camp: I worked with both the 3-5 year old and 5-7 year old group, learning the ins and outs of being employed as well as developing skills in education and childcare.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="projectsContainer">
+        <h1 class="sectionTitle" style="margin-top: 20px;">Projects</h1>
+
+        <div class="project" id="pd7">
+            <div id="leftAlignedContent" class="projectLeft">
+                <div id="educationText">
+                    <p class="universityName" style="padding-top: 22px; padding-bottom: 7px; font-weight: 300;">Congress Sentiment Tracking Model</p>
+                    <p class="degreeInfo"></p>
+                </div>
+            </div>
+            <div id="rightAlignedText">
+                <button class="button-4" id="vp1" onclick="openLink(1)">View Project</button>
+            </div>
+            <button class="dropdownButton" id="ddb7" style="padding-left: 20px;">
+                <img src="imgs/downArrowIcon.png" class="dropdownArrow" id="dda7">
+            </button>
+        </div>
+        <div id="dropdownInfo7" class="projectDropdown" style=" width: 1018px; max-width: 1018px; padding-top: 0px;padding-bottom: 0px;">
+            <p class="dropdownText" style="padding-left: 22px;">- Designed and implemented a quantitative finance model utilizing congress stock purchase records and policitian social media sentiment analysis</p>
+            <p class="dropdownText" style="padding-left: 22px;">- Led a team of 4 peers, generated 161% YOY return during paper trading tests</p>
+            <p class="dropdownText" style="padding-left: 22px; padding-bottom: 20px;">- <span style="font-weight: 500;">Skills: </span>Python, selenium, sentiment analysis, AWS EC2, GPT-4o API</p>
+        </div>
+
+        <div class="project" id="pd8">
+            <div id="leftAlignedContent" class="projectLeft">
+                <div id="educationText">
+                    <p class="universityName" style="padding-top: 22px; padding-bottom: 7px; font-weight: 300;">Indicator-Based Machine Learning Model</p>
+                    <p class="degreeInfo"></p>
+                </div>
+            </div>
+            <div id="rightAlignedText">
+                <button class="button-4" id="vp1" onclick="openLink(2)">View Project</button>
+            </div>
+            <button class="dropdownButton" id="ddb8" style="padding-left: 20px;">
+                <img src="imgs/downArrowIcon.png" class="dropdownArrow" id="dda8">
+            </button>
+        </div>
+        <div id="dropdownInfo8" class="projectDropdown" style=" width: 1018px; max-width: 1018px; padding-top: 0px;padding-bottom: 0px;">
+            <p class="dropdownText" style="padding-left: 22px;">- Created a robust weak-decision gradient-boosted linear regression model alongside a peer, integrating 5 indicators to maximize returns from trading financial assets, resulting in a 54% prediction success rate</p>
+            <p class="dropdownText" style="padding-left: 22px;">- Implemented Pandas library and Binance API to predict a 15% asset price drop four months prior to its occurrence and built HTML front-end interface to display results</p>
+            <p class="dropdownText" style="padding-left: 22px; padding-bottom: 20px;">- <span style="font-weight: 500;">Skills: </span>Machine learning, Pandas, Binance API, Scikitlearn, Python</p>
+        </div>
+
+        <div class="project" id="pd9">
+            <div id="leftAlignedContent" class="projectLeft">
+                <div id="educationText">
+                    <p class="universityName" style="padding-top: 22px; padding-bottom: 7px; font-weight: 300;">Simple Personal Website</p>
+                    <p class="degreeInfo"></p>
+                </div>
+            </div>
+            <div id="rightAlignedText">
+                <button class="button-4" id="vp1" onclick="openLink(3)">View Project</button>
+            </div>
+            <button class="dropdownButton" id="ddb9" style="padding-left: 20px;">
+                <img src="imgs/downArrowIcon.png" class="dropdownArrow" id="dda9">
+            </button>
+        </div>
+        <div id="dropdownInfo9" class="projectDropdown" style=" width: 1018px; max-width: 1018px; padding-top: 0px;padding-bottom: 0px;">
+            <p class="dropdownText" style="padding-left: 22px;">- Built a portfolio website from scratch to display relevant experience and projects, hosted online</p>
+            <p class="dropdownText" style="padding-left: 22px; padding-bottom: 20px;">- <span style="font-weight: 500;">Skills: </span>JavaScript, HTML5, CSS, Figma, React</p>
+        </div>
+    </div>
+
+    <div style="margin: 100px;"></div>
+    <div id="footer">
+        <p id="footerText">Designed and developed from scratch by Alex Rowe, 2024</p>
+    </div>
+
+    <div id="wipWrapper">
+        <img src="imgs/xIcon.png" id="closeWip">
+        <p id="wipTitle">Note:</p>
+        <p id="wipText">
+            My site is currently a work in progress. Improvements to the site's responsiveness and content are coming soon, stay tuned!
+        </p>
+    </div>
+</body>
+</html>
