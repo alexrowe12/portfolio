@@ -18,34 +18,31 @@
 </head>
 <body>
     <div id="navbar">
-        <a href="#" class="nav-link">
+        <!-- <a href="#" class="nav-link">
             <img src="imgs/mainIcon.png" id="mainIcon">
         </a>
         <a href="#aboutHook" class="nav-link">About</a>
         <a href="#educationHook" class="nav-link">Education</a>
         <a href="#experienceHook" class="nav-link">Experience</a>
         <a href="#projectsContainer" class="nav-link">Projects</a>
-        <a href="#" class="nav-link" id="contactNav">Contact</a>
-    </div>
+        <a href="#" class="nav-link" id="contactNav">Contact</a> -->
 
-    <div id="socialbar">
-        <a href="https://github.com/alexrowe12" target="_blank" rel="noopener noreferrer">
-            <img class="socialbarImg" src="imgs/githubIcon.png">
+        <img src="imgs/navbarLogo.png" class="navBarImg navBarIcon">
+
+        <a href="https://github.com/alexrowe12" target="_blank" rel="noopener noreferrer" class="navBarIcon">
+            <img class="navBarImg" src="imgs/githubIcon.png">
         </a>
-        <a href="https://www.linkedin.com/in/alexrowe12" target="_blank" rel="noopener noreferrer">
-            <img class="socialbarImg" src="imgs/linkedinIcon.png">
+        <a href="https://www.linkedin.com/in/alexrowe12" target="_blank" rel="noopener noreferrer" class="navBarIcon">
+            <img class="navBarImg" src="imgs/linkedinIcon.png">
         </a>
         <a href="mailto:arowe7@wisc.edu">
-            <img class="socialbarImg" src="imgs/emailIcon.png">
+            <img class="navBarImg" src="imgs/emailIcon.png" class="navBarIcon">
         </a>
     </div>
 
     <div id="aboutHook"></div>
 
     <div id="aboutContainer">
-        <div>
-            <img id="headshot" src="imgs/headshot.png" alt="Headshot">
-        </div>
         <div class="aboutSection">
             <h1 id="aboutTitle">About</h1>
             <p class="aboutText">
@@ -65,26 +62,29 @@
 
     <div id="educationContainer">
         <h1 class="sectionTitle" style="margin-top: 0px">Education</h1>
-        <div id="ew1">
+        <div id="ew1" class="contentSection">
             <div class="educationContent" id="ec1">
                 <div id="leftAlignedContent">
-                    <img src="imgs/uwLogo.png" class="educationLogo" alt="University of Wisconsin-Madison Logo">
+                    <!-- <img src="imgs/uwLogo.png" class="educationLogo" alt="University of Wisconsin-Madison Logo"> -->
                     <div id="educationText">
                         <p class="universityName" style="padding-top: 7px; padding-bottom: 3px;">
-                            University of Wisconsin-Madison</p>
-                        <p class="degreeInfo">B.S. in computer science, minor in business</p>
+                            UW-Madison</p>
+                        <p class="degreeInfo">B.S. in computer science</p>
                     </div>
                 </div>
-                <div id="rightAlignedText">
+                <!-- <div id="rightAlignedText">
                     <p class="additionalInfo" id="timestamp">Sep 2023 - Dec 2026</p>
                     <p class="additionalInfo" style="font-weight: 300; margin-top: 2px; font-size: 18px;">
                         Madison, WI</p>
-                </div>
+                </div> -->
                 <button class="dropdownButton" id="ddb1">
                     <img src="imgs/downArrowIcon.png" class="dropdownArrow" id="dda1">
                 </button>
             </div>
             <div id="dropdownInfo1">
+
+                <!-- TODO: You are here, add dropdown title info to dropdown div and test -->
+
                 <p class="dropdownText">- Studied computer science and a certificate in business at the University of Wisconsin-Madison</p>
                 <p class="dropdownText">- Member of the Wisconsin AI Safety Initiative and Badger Solar Racing's firmware team</p>
             </div>
@@ -117,7 +117,7 @@
             </div>
         </div>
     </div>
-
+<!--
     <div id="experienceContainer" style="padding-bottom: 0px;">
         <h1 class="sectionTitle" style="margin-top: 20px;">Experience</h1>
 

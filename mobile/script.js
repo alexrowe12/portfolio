@@ -1,5 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
+    // TODO: fix dynamic resizing of navbar images
+
     const numDropdowns = 9;
+    const navbarImgWidth = window.innerWidth / 200;
+    const navBarImgs = document.getElementsByClassName('navBarImg');
+
+    for (let i = 0; i < navBarImgs.length; i++) {
+        navBarImgs[i].style.height = `${navbarImgWidth}%`;
+    }
 
     function openDropdown(num) {
         let element = document.getElementById(`dropdownInfo${num}`);
@@ -7,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let arrowImg = document.getElementById(`dda${num}`);
         let eduWrapper = document.getElementById(`ew${num}`);
 
-        arrow.addEventListener("click", function () {
+        arrow.addEventListener('click', function () {
             if (element.classList.contains('show')) {
                 element.classList.remove('show');
                 arrowImg.style.transform = 'rotateX(0deg)';
@@ -22,11 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
         let eduContent = num >= 7 ? document.getElementById(`pd${num}`) : 
             document.getElementById(`ec${num}`);
 
-        arrow.addEventListener("mouseover", function () {
+        arrow.addEventListener('mouseover', function () {
             eduContent.style.backgroundColor = 'rgb(26, 26, 26)';
         });
 
-        arrow.addEventListener("mouseout", function () {
+        arrow.addEventListener('mouseout', function () {
             if (!element.classList.contains('show')) {
                 eduContent.style.backgroundColor = 'rgb(10, 10, 10)';
             }

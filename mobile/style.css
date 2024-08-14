@@ -29,12 +29,16 @@ html, body {
     height: 100%;
     scroll-behavior: smooth;
 }
+.contentSection {
+    max-width: 80%;
+    width: 80%;
+}
 
 /* Navbar */
 #navbar {
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background: rgb(10, 10, 10);
     padding: 10px 20px;
     font-size: 24px;
@@ -46,6 +50,9 @@ html, body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     z-index: 1000;
     padding-top: 20px;
+}
+#navbarLogo {
+    width: 10%;
 }
 .nav-link {
     color: white;
@@ -77,18 +84,17 @@ html, body {
     padding: 10px;
     z-index: 1000;
 }
-#socialbar a {
+.navBarIcon {
     display: block;
     margin: 5px 0;
 }
-.socialbarImg {
-    width: 34px;
+.navBarImg {
     height: auto;
     display: block;
     opacity: 1.0;
     transition: all 0.2s ease-in-out;
 }
-.socialbarImg:hover {
+.navBarImg:hover {
     opacity: 0.5;
 }
 @keyframes shake {
@@ -110,7 +116,7 @@ html, body {
     justify-content: space-around;
     padding: 10px;
     padding-top: 0px;
-    max-width: 974px;
+    max-width: 80%;
     margin: 0 auto;
 }
 #headshot {
@@ -120,10 +126,10 @@ html, body {
     border-radius: 5px;
 }
 .aboutSection {
-    width: 50%;
+    width: 80%;
 }
 #aboutTitle {
-    text-align: left;
+    text-align: center;
     margin-bottom: 0px;
     color: white;
     font-family: 'Jost', sans-serif;
@@ -138,7 +144,7 @@ html, body {
 
 /* Education */
 #educationContainer {
-    max-width: 974px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 20px;
     padding-top: 0px;
@@ -151,6 +157,7 @@ html, body {
 }
 #educationHook {
     height: 70px;
+    width: 80%;
 }
 .sectionTitle {
     text-align: center;
@@ -166,8 +173,7 @@ html, body {
     justify-content: space-between;
     width: 100%;
     transition: all 0.2s linear;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 5%;
 }
 #leftAlignedContent {
     display: flex;
@@ -232,8 +238,8 @@ html, body {
     padding: 10px;
     padding-bottom: 0px;
     margin-top: 0px;
-    width: 950px;
-    max-width: 950px;
+    width: 80%;
+    max-width: 80%;
     visibility: hidden;
     transition: all 0.5s linear;
     max-height: 0px;
@@ -253,7 +259,7 @@ html, body {
 
 /* Experience section */
 #experienceContainer {
-    max-width: 974px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 20px;
     padding-top: 0px;
@@ -274,7 +280,7 @@ html, body {
 
 /* Projects */
 #projectsContainer {
-    max-width: 974px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 20px;
     padding-top: 0px;
