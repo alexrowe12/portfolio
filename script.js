@@ -16,12 +16,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
         arrow.addEventListener("click", function () {
             if (element.classList.contains('show')) {
+                // Closing: start animations simultaneously
                 element.classList.remove('show');
                 arrowImg.style.transform = 'rotateX(0deg)';
                 if (eduWrapper) {
                     eduWrapper.style.backgroundColor = 'rgb(10, 10, 10)';
                 }
             } else {
+                // Opening: start animations simultaneously
                 element.classList.add('show');
                 arrowImg.style.transform = 'rotateX(180deg)';
                 if (eduWrapper) {

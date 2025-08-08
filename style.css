@@ -165,7 +165,7 @@ html, body {
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    transition: all 0.2s linear;
+    transition: all 0.5s ease-out;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -219,7 +219,7 @@ html, body {
 .dropdownArrow {
     height: 50px;
     opacity: 1.0;
-    transition: all 0.2s linear;
+    transition: all 0.5s ease-out;
     margin-top: 11px;
 }
 .dropdownArrow:hover {
@@ -242,7 +242,7 @@ html, body {
     width: 950px;
     max-width: 950px;
     visibility: hidden;
-    transition: all 0.5s linear;
+    transition: all 0.5s ease-out;
     max-height: 0px;
     overflow: hidden;
 }
