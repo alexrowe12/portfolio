@@ -1,41 +1,62 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const numDropdowns = 9;
+    // List of dropdown IDs that actually exist
+    const dropdownIds = [1, 2, 3, 5, 6, 7, 8, 9, 10, 11];
 
     function openDropdown(num) {
         let element = document.getElementById(`dropdownInfo${num}`);
         let arrow = document.getElementById(`ddb${num}`);
         let arrowImg = document.getElementById(`dda${num}`);
+        
+        // Skip if elements don't exist
+        if (!element || !arrow || !arrowImg) {
+            return;
+        }
+
         let eduWrapper = document.getElementById(`ew${num}`);
 
         arrow.addEventListener("click", function () {
             if (element.classList.contains('show')) {
                 element.classList.remove('show');
                 arrowImg.style.transform = 'rotateX(0deg)';
-                eduWrapper.style.backgroundColor = 'rgb(10, 10, 10)';
+                if (eduWrapper) {
+                    eduWrapper.style.backgroundColor = 'rgb(10, 10, 10)';
+                }
             } else {
                 element.classList.add('show');
                 arrowImg.style.transform = 'rotateX(180deg)';
-                eduWrapper.style.backgroundColor = 'rgb(26, 26, 26)';
+                if (eduWrapper) {
+                    eduWrapper.style.backgroundColor = 'rgb(26, 26, 26)';
+                }
             }
         });
 
-        let eduContent = num >= 7 ? document.getElementById(`pd${num}`) : 
-            document.getElementById(`ec${num}`);
+        // Determine the correct content element based on dropdown type
+        let eduContent;
+        if (num >= 7 && num <= 9) {
+            // Projects use pd elements
+            eduContent = document.getElementById(`pd${num}`);
+        } else {
+            // Education, experience, and extracurriculars use ec elements
+            eduContent = document.getElementById(`ec${num}`);
+        }
 
-        arrow.addEventListener("mouseover", function () {
-            eduContent.style.backgroundColor = 'rgb(26, 26, 26)';
-        });
+        if (eduContent && arrow) {
+            arrow.addEventListener("mouseover", function () {
+                eduContent.style.backgroundColor = 'rgb(26, 26, 26)';
+            });
 
-        arrow.addEventListener("mouseout", function () {
-            if (!element.classList.contains('show')) {
-                eduContent.style.backgroundColor = 'rgb(10, 10, 10)';
-            }
-        });
+            arrow.addEventListener("mouseout", function () {
+                if (!element.classList.contains('show')) {
+                    eduContent.style.backgroundColor = 'rgb(10, 10, 10)';
+                }
+            });
+        }
     }
 
-    for (let i = 0; i < numDropdowns; i++) {
-        openDropdown(i + 1);
-    }
+    // Only initialize dropdowns that actually exist
+    dropdownIds.forEach(id => {
+        openDropdown(id);
+    });
 
     document.getElementById('contactNav').addEventListener('click', function () {
         imgs = document.getElementsByClassName('socialbarImg');
